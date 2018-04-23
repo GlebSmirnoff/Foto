@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 get'/' do
-  erb  "Zaaaaaaaaaaza"
+  erb  "Zaaaaaaaaaaza!!!!!!!!!!!!!!"
 end
 
 get '/foto' do
@@ -16,5 +16,12 @@ post '/foto' do
 	@datetime = params[:datetime]
 	@photograf = params[:photograf]
 	@color = params[:color]
+hh = {:username=> 'Enter name', :datetime => 'Enter date',}
+@error = hh.select {|key,_| params[key] == ""}.values.join(",")
+if @error!= ''
+return erb :foto
+end	
+
+
      erb "Ok Die, #{@username}, we wait you at #{@datetime}, your photografer is #{@photograf}, #{@color}" 
 end
