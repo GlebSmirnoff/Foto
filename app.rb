@@ -11,4 +11,7 @@ end
 get '/contacts' do
 	erb :contacts
 end
-
+post '/visit' do
+	@username = params[:]
+     erb "Ok"
+end
