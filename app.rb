@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 get'/' do
-  erb  "Zdarova"
+  erb  "Z"
 end
 
 get '/foto' do

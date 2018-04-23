@@ -8,10 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <title>Fotografer</title>
+    <title>Photografer</title>
   </head>
-  <body>
+ <body>
+ 	<header>
+     	 
+       	 <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-lg-8">
     <h1>Fotografer</h1>
+
 <ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" href="/">Home</a>
@@ -26,6 +32,12 @@
     <a class="nav-link disabled" href="#">Disabled</a>
   </li>
 </ul>
+		
+	</div>
+      </div>
+     </div>
+</header>
+
     				<%if @error then %>
 						<div class="alert alert-error"><%=@error%></div>
 				 <% end %>
