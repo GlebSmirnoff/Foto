@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 get'/' do
-  erb  "Z"
+  erb  "Zaaaaaaaaaaza"
 end
 
 get '/foto' do
@@ -14,6 +14,7 @@ end
 post '/foto' do
 	@username = params[:username]
 	@datetime = params[:datetime]
-	@photgrafer = params[:photografer]
-     erb "Ok Die, #{username}, we wait you at #{datetime}, your photografer is #{photografer}" 
+	@photograf = params[:photograf]
+	@color = params[:color]
+     erb "Ok Die, #{@username}, we wait you at #{@datetime}, your photografer is #{@photograf}, #{@color}" 
 end
