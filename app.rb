@@ -11,7 +11,9 @@ end
 get '/contacts' do
 	erb :contacts
 end
-post '/visit' do
-	@username = params[:]
-     erb "Ok"
+post '/foto' do
+	@username = params[:username]
+	@datetime = params[:datetime]
+	@photgrafer = params[:photografer]
+     erb "Ok Die, #{username}, we wait you at #{datetime}, your photografer is #{photografer}" 
 end
