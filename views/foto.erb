@@ -2,12 +2,12 @@
 <form action="/foto" method="POST" role="form">
   
   <div class="form-group">
-    <label>Name</label>
-    <input name="username" type="text" class="form-control"  placeholder="Enter your name">
+    <label>Name</label>                                                                    
+    <input name="username" type="text" class="form-control"  placeholder="Enter your name" value="<%= @username %>">
   </div>
  <div class="form-group">
     <label>datetime</label>
-    <input name="datetime" type="datetime" class="form-control" placeholder="enter datetime">
+    <input name="datetime" type="datetime" class="form-control" placeholder="enter datetime" value="<%= @datetime %>">
   </div>
 
  <div class="form-group">
