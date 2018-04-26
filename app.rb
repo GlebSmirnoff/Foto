@@ -1,5 +1,12 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/reloader'
+require 'sqlite3'
+
+configure do
+	@db = SQLite3::Database.new 'photo.db'
+	@db.execute 'CREATE TABLE IF NOT EXISTS "Users"("id" INTEGER PRIMARY KEY AUTOINCREMENT, "username"TEXT, "datestamp" TEXT, "fotograf" TEXT, "color" TEXT)' 	
+end
 
 get'/' do
   erb  "Zaaaaaaaaaaza!!!!!!!!!!!!!!"
